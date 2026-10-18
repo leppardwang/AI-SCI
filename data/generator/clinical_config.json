@@ -1,0 +1,377 @@
+{
+  "_comment": "UTF-8 external config. All Chinese clinical strings live here so that gen_lecheng_logs.py stays ASCII-only.",
+  "hospitals": [
+    {
+      "id": "ruijin_hn",
+      "name": "Hospital 01",
+      "scale": 2200,
+      "subnet": "10.1",
+      "depts": [
+        "内分泌科",
+        "心内科",
+        "呼吸科",
+        "骨科",
+        "普外科",
+        "急诊科",
+        "影像科"
+      ]
+    },
+    {
+      "id": "shulan",
+      "name": "Hospital 02",
+      "scale": 1800,
+      "subnet": "10.2",
+      "depts": [
+        "内分泌科",
+        "心内科",
+        "妇产科",
+        "儿科",
+        "中医科",
+        "检验科"
+      ]
+    },
+    {
+      "id": "super_hn",
+      "name": "Hospital 03",
+      "scale": 1500,
+      "subnet": "10.3",
+      "depts": [
+        "心内科",
+        "肿瘤科",
+        "眼科",
+        "皮肤科",
+        "康复科",
+        "影像科"
+      ]
+    },
+    {
+      "id": "huaxi",
+      "name": "Hospital 04",
+      "scale": 2500,
+      "subnet": "10.4",
+      "depts": [
+        "内分泌科",
+        "心内科",
+        "呼吸科",
+        "神经内科",
+        "消化科",
+        "急诊科",
+        "影像科",
+        "药房"
+      ]
+    },
+    {
+      "id": "prov_people",
+      "name": "Hospital 05",
+      "scale": 2000,
+      "subnet": "10.5",
+      "depts": [
+        "内分泌科",
+        "心内科",
+        "骨科",
+        "妇产科",
+        "儿科",
+        "检验科"
+      ]
+    },
+    {
+      "id": "yiling",
+      "name": "Hospital 06",
+      "scale": 1200,
+      "subnet": "10.6",
+      "depts": [
+        "内分泌科",
+        "抗衰老科",
+        "体检中心",
+        "营养科",
+        "中医科",
+        "影像科"
+      ]
+    },
+    {
+      "id": "hainan_med",
+      "name": "Hospital 07",
+      "scale": 1900,
+      "subnet": "10.7",
+      "depts": [
+        "内分泌科",
+        "心内科",
+        "呼吸科",
+        "急诊科",
+        "检验科",
+        "药房"
+      ]
+    },
+    {
+      "id": "evergrande",
+      "name": "Hospital 08",
+      "scale": 1000,
+      "subnet": "10.8",
+      "depts": [
+        "心内科",
+        "骨科",
+        "妇产科",
+        "儿科",
+        "影像科"
+      ]
+    },
+    {
+      "id": "boai",
+      "name": "Hospital 09",
+      "scale": 900,
+      "subnet": "10.9",
+      "depts": [
+        "内分泌科",
+        "心内科",
+        "呼吸科",
+        "急诊科",
+        "药房"
+      ]
+    },
+    {
+      "id": "ciming",
+      "name": "Hospital 10",
+      "scale": 800,
+      "subnet": "10.10",
+      "depts": [
+        "体检中心",
+        "眼科",
+        "口腔科",
+        "皮肤科"
+      ]
+    },
+    {
+      "id": "jixin",
+      "name": "Hospital 11",
+      "scale": 1100,
+      "subnet": "10.11",
+      "depts": [
+        "心内科",
+        "肿瘤科",
+        "影像科",
+        "药房"
+      ]
+    },
+    {
+      "id": "wenlan",
+      "name": "Hospital 12",
+      "scale": 700,
+      "subnet": "10.12",
+      "depts": [
+        "中医科",
+        "针灸科",
+        "推拿科",
+        "内科"
+      ]
+    }
+  ],
+  "roles": [
+    "主任医师",
+    "副主任医师",
+    "主治医师",
+    "住院医师",
+    "实习医生",
+    "护士长",
+    "护士",
+    "药师",
+    "信息科管理员"
+  ],
+  "role_en": {
+    "主任医师": "chief",
+    "副主任医师": "assoc",
+    "主治医师": "attend",
+    "住院医师": "resid",
+    "实习医生": "intern",
+    "护士长": "head_n",
+    "护士": "nurse",
+    "药师": "pharm",
+    "信息科管理员": "it_adm"
+  },
+  "pharmacy_dept": "药房",
+  "it_dept": "信息科",
+  "patient_sensitivity": [
+    "普通",
+    "普通",
+    "普通",
+    "普通",
+    "普通",
+    "普通",
+    "普通",
+    "普通",
+    "VIP",
+    "临床试验",
+    "临床试验",
+    "感染",
+    "精神"
+  ],
+  "actions": [
+    "api_query",
+    "bulk_export",
+    "nightly_backup"
+  ],
+  "risk_types": [
+    "api_scan",
+    "brute_force",
+    "data_leak",
+    "replay",
+    "sync_conflict"
+  ],
+  "platforms": {
+    "san_yi": {
+      "label": "Core Medical Platform",
+      "is_core": true
+    },
+    "hainan_medical_record": {
+      "label": "Provincial EHR Platform",
+      "is_core": false
+    },
+    "lecheng_realworld": {
+      "label": "Real-World Data Platform",
+      "is_core": false
+    },
+    "provincial_health": {
+      "label": "Provincial Health Information Platform",
+      "is_core": false
+    },
+    "boao_special": {
+      "label": "Licensed Drug & Device Platform",
+      "is_core": false
+    },
+    "overseas_trial": {
+      "label": "Overseas Clinical Trial Platform",
+      "is_core": false
+    }
+  },
+  "clinical_actions": {
+    "query_pharmacy_stock": {
+      "label": "查询药房库存",
+      "category": "药房管理",
+      "reasons": [
+        "处方审核",
+        "药品盘点",
+        "库存查询"
+      ]
+    },
+    "view_nursing_record": {
+      "label": "查看护理记录",
+      "category": "护理记录",
+      "reasons": [
+        "护理记录",
+        "日常查房"
+      ]
+    },
+    "read_emr": {
+      "label": "调阅电子病历",
+      "category": "EMR电子病历",
+      "reasons": [
+        "日常查房",
+        "门诊",
+        "科室讨论",
+        "教学查房",
+        "会诊"
+      ]
+    },
+    "read_lab_report": {
+      "label": "查看检验报告",
+      "category": "LIS检验",
+      "reasons": [
+        "检验结果追踪",
+        "会诊",
+        "门诊"
+      ]
+    },
+    "read_imaging_report": {
+      "label": "查看影像报告",
+      "category": "PACS影像",
+      "reasons": [
+        "会诊",
+        "科室讨论",
+        "术前评估",
+        "门诊"
+      ]
+    },
+    "nightly_backup": {
+      "label": "夜间自动备份",
+      "category": "HIS管理",
+      "reasons": [
+        "系统定时任务",
+        "增量校验任务"
+      ]
+    },
+    "masked_export": {
+      "label": "脱敏批量导出",
+      "category": "EMR电子病历",
+      "reasons": [
+        "科研伦理审批导出",
+        "月度质量分析导出"
+      ]
+    },
+    "api_probe": {
+      "label": "非授权接口探测",
+      "category": "HIS管理",
+      "reason": "尝试访问未授权API端点，疑似扫描内部接口",
+      "role": "信息科管理员"
+    },
+    "data_sync_fail": {
+      "label": "同步冲突重试",
+      "category": "HIS管理",
+      "reason": "双链路同步写入冲突，数据一致性检验失败",
+      "role": "信息科管理员"
+    },
+    "auth_retry": {
+      "label": "重复登录失败",
+      "category": "HIS管理",
+      "reason": "连续5次密码校验失败，疑似暴力破解尝试",
+      "role": "实习医生"
+    },
+    "bulk_export": {
+      "label": "批量导出患者数据",
+      "category": "EMR电子病历",
+      "reason": "无合规审批单的大批量患者数据导出操作",
+      "role": "主治医师"
+    },
+    "token_replay": {
+      "label": "重放认证令牌",
+      "category": "HIS管理",
+      "reason": "已过期JWT令牌被重新提交至认证网关",
+      "role": "信息科管理员"
+    }
+  },
+  "risk_to_clinical": {
+    "api_scan": "api_probe",
+    "sync_conflict": "data_sync_fail",
+    "brute_force": "auth_retry",
+    "data_leak": "bulk_export",
+    "replay": "token_replay"
+  },
+  "response_status": {
+    "api_scan": [
+      403,
+      403,
+      403,
+      500
+    ],
+    "brute_force": [
+      403,
+      403,
+      401
+    ],
+    "data_leak": [
+      403,
+      403,
+      403,
+      403,
+      500
+    ],
+    "replay": [
+      403,
+      401,
+      403
+    ],
+    "sync_conflict": [
+      500,
+      502,
+      500
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Backups / snapshots
+*.bak
+_snapshots/
+
+# Generated artifacts
+results/
+data/*.csv
+data/keys/
+
+# LaTeX build leftovers
+*.log
+*.aux
+*.out
+
+# OS
+.DS_Store
+Thumbs.db
